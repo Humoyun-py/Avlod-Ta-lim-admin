@@ -1,0 +1,560 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_1",
+      "username": "admin",
+      "password_hash": "admin123",
+      "full_name": "Dr. Anura K. Oridrova",
+      "role": "admin",
+      "email": "anura.admin@avlodtalim.uz",
+      "phone": "+998 90 123 45 67",
+      "avatar_url": "/src/assets/images/admin_avatar_1792586465148.jpg",
+      "status": "active",
+      "created_at": "2025-09-01T08:00:00Z"
+    },
+    {
+      "id": "usr_director_1",
+      "username": "director",
+      "password_hash": "director123",
+      "full_name": "Bobur Mirzayev",
+      "role": "director",
+      "email": "director@avlodtalim.uz",
+      "phone": "+998 90 999 00 11",
+      "status": "active",
+      "created_at": "2025-08-15T08:00:00Z"
+    },
+    {
+      "id": "usr_teacher_1",
+      "username": "teacher",
+      "password_hash": "teacher123",
+      "full_name": "Sardor Rakhimov",
+      "role": "teacher",
+      "email": "sardor.teacher@avlodtalim.uz",
+      "phone": "+998 93 456 78 90",
+      "status": "active",
+      "created_at": "2025-09-10T08:00:00Z"
+    },
+    {
+      "id": "usr_student_1",
+      "username": "AVL-2026-1042",
+      "password_hash": "student123",
+      "full_name": "Javohir Alimov",
+      "role": "student",
+      "email": "javohir@student.uz",
+      "phone": "+998 91 321 65 43",
+      "status": "active",
+      "created_at": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "usr_std_std_1792587466111",
+      "username": "AVL-2026-1047",
+      "password_hash": "Avlod#5755!",
+      "full_name": "Otabek Qodirov",
+      "role": "student",
+      "email": "avl-2026-1047@avlodtalim.uz",
+      "phone": "+998 90 111 22 33",
+      "status": "active",
+      "created_at": "2026-10-21T12:57:46.111Z"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "tch_1",
+      "full_name": "Sardor Rakhimov",
+      "email": "sardor.r@avlodtalim.uz",
+      "phone": "+998 93 456 78 90",
+      "specializations": [
+        "Full-Stack Web Development",
+        "Python & Django"
+      ],
+      "active_groups": 3
+    },
+    {
+      "id": "tch_2",
+      "full_name": "Nilufar Usmonova",
+      "email": "nilufar.u@avlodtalim.uz",
+      "phone": "+998 97 123 99 88",
+      "specializations": [
+        "UI/UX Design",
+        "Digital Product Design"
+      ],
+      "active_groups": 2
+    },
+    {
+      "id": "tch_3",
+      "full_name": "Akmal Karimov",
+      "email": "akmal.k@avlodtalim.uz",
+      "phone": "+998 90 777 44 22",
+      "specializations": [
+        "Data Science & AI",
+        "Mobile Development Flutter"
+      ],
+      "active_groups": 2
+    },
+    {
+      "id": "tch_4",
+      "full_name": "Madina Tursunova",
+      "email": "madina.t@avlodtalim.uz",
+      "phone": "+998 94 333 11 55",
+      "specializations": [
+        "Cybersecurity & Networks",
+        "DevOps & Cloud"
+      ],
+      "active_groups": 1
+    }
+  ],
+  "courses": [
+    {
+      "id": "crs_1",
+      "name": "Full-Stack Web Development",
+      "description": "Comprehensive program covering modern React, TypeScript, Node.js, Django REST Framework, and cloud deployment.",
+      "duration_months": 6,
+      "default_monthly_fee": 1200000,
+      "status": "active",
+      "groups_count": 4,
+      "created_at": "2025-08-01T00:00:00Z"
+    },
+    {
+      "id": "crs_2",
+      "name": "Python & Data Engineering",
+      "description": "Foundational and advanced Python, algorithmic programming, SQL & PostgreSQL, Pandas, and machine learning basics.",
+      "duration_months": 5,
+      "default_monthly_fee": 1100000,
+      "status": "active",
+      "groups_count": 3,
+      "created_at": "2025-08-15T00:00:00Z"
+    },
+    {
+      "id": "crs_3",
+      "name": "UI/UX Product Design",
+      "description": "Design systems, Figma mastery, user research, wireframing, interactive prototyping, and design-to-code collaboration.",
+      "duration_months": 4,
+      "default_monthly_fee": 950000,
+      "status": "active",
+      "groups_count": 2,
+      "created_at": "2025-09-01T00:00:00Z"
+    },
+    {
+      "id": "crs_4",
+      "name": "Flutter Mobile Engineering",
+      "description": "Cross-platform iOS and Android mobile engineering with Flutter, Dart, state management, and real-time backend synchronization.",
+      "duration_months": 5,
+      "default_monthly_fee": 1150000,
+      "status": "active",
+      "groups_count": 2,
+      "created_at": "2025-09-15T00:00:00Z"
+    },
+    {
+      "id": "crs_5",
+      "name": "Cloud Architecture & DevOps",
+      "description": "Docker, Kubernetes, Linux systems, CI/CD pipelines, and cloud infrastructure management.",
+      "duration_months": 4,
+      "default_monthly_fee": 1300000,
+      "status": "active",
+      "groups_count": 1,
+      "created_at": "2025-10-01T00:00:00Z"
+    }
+  ],
+  "groups": [
+    {
+      "id": "grp_1",
+      "name": "FS-2026-A1",
+      "course_id": "crs_1",
+      "course_name": "Full-Stack Web Development",
+      "teacher_id": "tch_1",
+      "teacher_name": "Sardor Rakhimov",
+      "start_date": "2026-02-01",
+      "schedule": "Mon / Wed / Fri 18:30 - 20:30",
+      "status": "active",
+      "student_ids": [
+        "std_1",
+        "std_2",
+        "std_5",
+        "std_1792587466111"
+      ],
+      "created_at": "2026-01-15T10:00:00Z"
+    },
+    {
+      "id": "grp_2",
+      "name": "PY-2026-B2",
+      "course_id": "crs_2",
+      "course_name": "Python & Data Engineering",
+      "teacher_id": "tch_3",
+      "teacher_name": "Akmal Karimov",
+      "start_date": "2026-02-15",
+      "schedule": "Tue / Thu / Sat 16:00 - 18:00",
+      "status": "active",
+      "student_ids": [
+        "std_3",
+        "std_6"
+      ],
+      "created_at": "2026-01-20T10:00:00Z"
+    },
+    {
+      "id": "grp_3",
+      "name": "UX-2026-C1",
+      "course_id": "crs_3",
+      "course_name": "UI/UX Product Design",
+      "teacher_id": "tch_2",
+      "teacher_name": "Nilufar Usmonova",
+      "start_date": "2026-03-01",
+      "schedule": "Mon / Wed / Fri 14:00 - 16:00",
+      "status": "active",
+      "student_ids": [
+        "std_4"
+      ],
+      "created_at": "2026-02-01T10:00:00Z"
+    },
+    {
+      "id": "grp_4",
+      "name": "MOB-2026-D1",
+      "course_id": "crs_4",
+      "course_name": "Flutter Mobile Engineering",
+      "teacher_id": "tch_3",
+      "teacher_name": "Akmal Karimov",
+      "start_date": "2026-03-15",
+      "schedule": "Tue / Thu / Sat 19:00 - 21:00",
+      "status": "planned",
+      "student_ids": [],
+      "created_at": "2026-02-10T10:00:00Z"
+    }
+  ],
+  "students": [
+    {
+      "id": "std_1792587466111",
+      "student_id": "AVL-2026-1047",
+      "first_name": "Otabek",
+      "last_name": "Qodirov",
+      "full_name": "Otabek Qodirov",
+      "phone": "+998 90 111 22 33",
+      "course_id": "crs_1",
+      "course_name": "Full-Stack Web Development",
+      "group_id": "grp_1",
+      "group_name": "FS-2026-A1",
+      "monthly_fee": 1200000,
+      "amount_paid": 0,
+      "balance_due": 1200000,
+      "payment_status": "unpaid",
+      "account_status": "active",
+      "restriction_reason": null,
+      "coin_balance": 100,
+      "attendance_percentage": 100,
+      "registered_at": "2026-10-21T12:57:46.111Z",
+      "last_payment_date": null
+    },
+    {
+      "id": "std_1",
+      "student_id": "AVL-2026-1042",
+      "first_name": "Javohir",
+      "last_name": "Alimov",
+      "full_name": "Javohir Alimov",
+      "phone": "+998 91 321 65 43",
+      "course_id": "crs_1",
+      "course_name": "Full-Stack Web Development",
+      "group_id": "grp_1",
+      "group_name": "FS-2026-A1",
+      "monthly_fee": 1200000,
+      "amount_paid": 2400000,
+      "balance_due": 0,
+      "payment_status": "paid",
+      "account_status": "active",
+      "restriction_reason": null,
+      "coin_balance": 450,
+      "attendance_percentage": 96,
+      "registered_at": "2026-01-10T09:30:00Z",
+      "last_payment_date": "2026-03-05"
+    },
+    {
+      "id": "std_2",
+      "student_id": "AVL-2026-1043",
+      "first_name": "Shaxnoza",
+      "last_name": "Karimova",
+      "full_name": "Shaxnoza Karimova",
+      "phone": "+998 90 888 12 34",
+      "course_id": "crs_1",
+      "course_name": "Full-Stack Web Development",
+      "group_id": "grp_1",
+      "group_name": "FS-2026-A1",
+      "monthly_fee": 1200000,
+      "amount_paid": 600000,
+      "balance_due": 600000,
+      "payment_status": "partially_paid",
+      "account_status": "active",
+      "restriction_reason": null,
+      "coin_balance": 280,
+      "attendance_percentage": 92,
+      "registered_at": "2026-01-12T11:00:00Z",
+      "last_payment_date": "2026-03-01"
+    },
+    {
+      "id": "std_3",
+      "student_id": "AVL-2026-1044",
+      "first_name": "Dilshod",
+      "last_name": "Nazarov",
+      "full_name": "Dilshod Nazarov",
+      "phone": "+998 94 555 77 11",
+      "course_id": "crs_2",
+      "course_name": "Python & Data Engineering",
+      "group_id": "grp_2",
+      "group_name": "PY-2026-B2",
+      "monthly_fee": 1100000,
+      "amount_paid": 0,
+      "balance_due": 1100000,
+      "payment_status": "unpaid",
+      "account_status": "active",
+      "restriction_reason": null,
+      "coin_balance": 150,
+      "attendance_percentage": 88,
+      "registered_at": "2026-01-22T14:15:00Z",
+      "last_payment_date": null
+    },
+    {
+      "id": "std_4",
+      "student_id": "AVL-2026-1045",
+      "first_name": "Malika",
+      "last_name": "Ergasheva",
+      "full_name": "Malika Ergasheva",
+      "phone": "+998 93 222 44 88",
+      "course_id": "crs_3",
+      "course_name": "UI/UX Product Design",
+      "group_id": "grp_3",
+      "group_name": "UX-2026-C1",
+      "monthly_fee": 950000,
+      "amount_paid": 950000,
+      "balance_due": 0,
+      "payment_status": "paid",
+      "account_status": "active",
+      "restriction_reason": null,
+      "coin_balance": 90,
+      "attendance_percentage": 75,
+      "registered_at": "2026-02-02T10:00:00Z",
+      "last_payment_date": "2026-03-08"
+    },
+    {
+      "id": "std_5",
+      "student_id": "AVL-2026-1046",
+      "first_name": "Azizbek",
+      "last_name": "Rustamov",
+      "full_name": "Azizbek Rustamov",
+      "phone": "+998 97 444 88 22",
+      "course_id": "crs_1",
+      "course_name": "Full-Stack Web Development",
+      "group_id": "grp_1",
+      "group_name": "FS-2026-A1",
+      "monthly_fee": 1200000,
+      "amount_paid": 1200000,
+      "balance_due": 0,
+      "payment_status": "paid",
+      "account_status": "active",
+      "restriction_reason": null,
+      "coin_balance": 310,
+      "attendance_percentage": 95,
+      "registered_at": "2026-01-18T16:20:00Z",
+      "last_payment_date": "2026-03-02"
+    },
+    {
+      "id": "std_6",
+      "student_id": "AVL-2026-1047",
+      "first_name": "Gulnoza",
+      "last_name": "Sobirova",
+      "full_name": "Gulnoza Sobirova",
+      "phone": "+998 99 666 33 11",
+      "course_id": "crs_2",
+      "course_name": "Python & Data Engineering",
+      "group_id": "grp_2",
+      "group_name": "PY-2026-B2",
+      "monthly_fee": 1100000,
+      "amount_paid": 1100000,
+      "balance_due": 0,
+      "payment_status": "paid",
+      "account_status": "active",
+      "restriction_reason": null,
+      "coin_balance": 520,
+      "attendance_percentage": 100,
+      "registered_at": "2026-01-25T09:10:00Z",
+      "last_payment_date": "2026-03-04"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_1",
+      "reference": "PAY-2026-0891",
+      "student_id": "std_1",
+      "student_code": "AVL-2026-1042",
+      "student_name": "Javohir Alimov",
+      "amount": 1200000,
+      "payment_method": "payme",
+      "payment_date": "2026-03-05",
+      "verification_status": "approved",
+      "payment_status": "confirmed",
+      "registered_by": "Dr. Anura K. Oridrova (Admin)",
+      "reviewed_by": "Bobur Mirzayev (Director)",
+      "receipt_url": "/src/assets/images/shop_product_notebook_1792586463610.jpg",
+      "note": "March 2026 tuition installment via Payme",
+      "created_at": "2026-03-05T14:20:00Z"
+    },
+    {
+      "id": "pay_2",
+      "reference": "PAY-2026-0892",
+      "student_id": "std_2",
+      "student_code": "AVL-2026-1043",
+      "student_name": "Shaxnoza Karimova",
+      "amount": 600000,
+      "payment_method": "cash",
+      "payment_date": "2026-03-01",
+      "verification_status": "approved",
+      "payment_status": "confirmed",
+      "registered_by": "Dr. Anura K. Oridrova (Admin)",
+      "reviewed_by": "System (Cash Direct Receipt #412)",
+      "receipt_url": null,
+      "note": "Partial cash payment accepted at reception",
+      "created_at": "2026-03-01T10:15:00Z"
+    },
+    {
+      "id": "pay_3",
+      "reference": "PAY-2026-0893",
+      "student_id": "std_4",
+      "student_code": "AVL-2026-1045",
+      "student_name": "Malika Ergasheva",
+      "amount": 950000,
+      "payment_method": "click",
+      "payment_date": "2026-03-08",
+      "verification_status": "approved",
+      "payment_status": "confirmed",
+      "registered_by": "Dr. Anura K. Oridrova (Admin)",
+      "reviewed_by": "Dr. Anura K. Oridrova (ADMIN)",
+      "receipt_url": "/src/assets/images/shop_product_backpack_1792586463062.jpg",
+      "note": "Click payment claim awaiting director banking verification",
+      "created_at": "2026-03-08T11:45:00Z"
+    },
+    {
+      "id": "pay_4",
+      "reference": "PAY-2026-0894",
+      "student_id": "std_3",
+      "student_code": "AVL-2026-1044",
+      "student_name": "Dilshod Nazarov",
+      "amount": 1100000,
+      "payment_method": "uzum",
+      "payment_date": "2026-03-09",
+      "verification_status": "pending",
+      "payment_status": "unverified",
+      "registered_by": "Dr. Anura K. Oridrova (Admin)",
+      "reviewed_by": null,
+      "receipt_url": "/src/assets/images/shop_product_hoodie_1792586462709.jpg",
+      "note": "Uzum transfer receipt uploaded by student claim",
+      "created_at": "2026-03-09T16:00:00Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prd_1",
+      "name": "Avlod Academy Executive Hoodie",
+      "description": "Heavyweight organic cotton navy hoodie featuring the official Avlod Ta'lim academic crest and gold embroidered monogram.",
+      "coin_price": 350,
+      "stock_quantity": 24,
+      "is_active": true,
+      "image_url": "/src/assets/images/shop_product_hoodie_1792586462709.jpg",
+      "created_at": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "prd_2",
+      "name": "Avlod Tech Commuter Backpack",
+      "description": "Weatherproof ergonomic laptop backpack with padded compartment, organizational dividers, and quick-access pockets.",
+      "coin_price": 450,
+      "stock_quantity": 15,
+      "is_active": true,
+      "image_url": "/src/assets/images/shop_product_backpack_1792586463062.jpg",
+      "created_at": "2026-01-12T08:00:00Z"
+    },
+    {
+      "id": "prd_3",
+      "name": "Hardcover Engineering Notebook & Stylus",
+      "description": "Premium faux-leather engineering journal with dot-grid pages, brass crest, ribbon bookmark, and precision ballpoint pen.",
+      "coin_price": 180,
+      "stock_quantity": 40,
+      "is_active": true,
+      "image_url": "/src/assets/images/shop_product_notebook_1792586463610.jpg",
+      "created_at": "2026-01-15T08:00:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_1",
+      "order_number": "ORD-2026-0214",
+      "student_id": "std_1",
+      "student_name": "Javohir Alimov",
+      "student_code": "AVL-2026-1042",
+      "product_id": "prd_1",
+      "product_name": "Avlod Academy Executive Hoodie",
+      "quantity": 1,
+      "total_coins": 350,
+      "status": "pending",
+      "order_date": "2026-03-07T11:20:00Z",
+      "admin_notes": "Size L requested"
+    },
+    {
+      "id": "ord_2",
+      "order_number": "ORD-2026-0215",
+      "student_id": "std_6",
+      "student_name": "Gulnoza Sobirova",
+      "student_code": "AVL-2026-1047",
+      "product_id": "prd_3",
+      "product_name": "Hardcover Engineering Notebook & Stylus",
+      "quantity": 1,
+      "total_coins": 180,
+      "status": "ready",
+      "order_date": "2026-03-06T15:40:00Z",
+      "admin_notes": "Packaged and stored in admin room locker A4"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_1",
+      "title": "New Payment Verification Request",
+      "message": "Payment reference PAY-2026-0894 for 1,100,000 UZS from Dilshod Nazarov requires receipt review.",
+      "type": "payment",
+      "is_read": false,
+      "created_at": "2026-03-09T16:00:00Z"
+    },
+    {
+      "id": "notif_2",
+      "title": "Shop Order Received",
+      "message": "Student Javohir Alimov placed an order for Avlod Academy Executive Hoodie (350 Coins).",
+      "type": "shop",
+      "is_read": false,
+      "created_at": "2026-03-07T11:20:00Z"
+    },
+    {
+      "id": "notif_3",
+      "title": "Group Enrollment Milestone",
+      "message": "Group FS-2026-A1 reached target student capacity. Teacher Sardor Rakhimov notified.",
+      "type": "group",
+      "is_read": true,
+      "created_at": "2026-03-04T09:00:00Z"
+    },
+    {
+      "id": "notif_4",
+      "title": "System Policy Alert",
+      "message": "Automated policy check: 1 student account currently restricted due to grace period expiration.",
+      "type": "system",
+      "is_read": true,
+      "created_at": "2026-03-02T08:00:00Z"
+    }
+  ],
+  "coinTransactions": [
+    {
+      "id": "ctx_1",
+      "student_id": "std_1",
+      "amount": -350,
+      "reason": "Shop Order ORD-2026-0214 (Avlod Academy Executive Hoodie)",
+      "created_at": "2026-03-07T11:20:00Z"
+    },
+    {
+      "id": "ctx_2",
+      "student_id": "std_6",
+      "amount": -180,
+      "reason": "Shop Order ORD-2026-0215 (Hardcover Engineering Notebook & Stylus)",
+      "created_at": "2026-03-06T15:40:00Z"
+    }
+  ]
+}
